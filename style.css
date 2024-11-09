@@ -1,0 +1,85 @@
+/* definiamo lo sfondo e le caratteristiche principali che deve ottenere la pagina */
+body{
+  background-image: url('img/background.jpg');
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding-top: 20px;
+}
+/* creiamo la box colore nero con opacità */
+.quadrato{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  width: 1000px;
+  text-align: center;
+}
+/* definiamo come deve essere il logo con tutte le sue caratteristiche */
+.logo{
+  margin-top: 60px;
+width: 200px;
+height: auto;
+}
+/* definiamo la scritta "taking..." con tutte le sue caratteristiche */
+.int{
+  color: #00dd00;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+/* creiamo il board di colore verde sotto i pilsanti per le azioni */
+.pulsanti{
+  align-items:center;
+  border: 5px solid #00dd00;
+  background-color: #00dd00;
+  height: 30px;
+  padding-top: 8px;
+  margin: 0px 60px 30px 60px;
+}
+/* aggiungiamo delle caratteristiche alle scritte che ci indicano i modelli dei monopattini da scegliere  */
+.modello{
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+}
+/* diamo uno stile diverso che ci indicano la distanza del mezzo dalla nostra posizione e ci introducono il livello di batteria attuale */
+.distanza, .carica{
+  color: lightgrey;
+  font-size: 16px;
+}
+/* aggiungiamo avnati ad ogni indicatore di distanza una freccia a doppio senso */
+.distanza::before{
+  content: "\2194";
+}
+/* allineamo i modelli dei monopattini e le loro caratteristiche sulla sinistra */
+.monopattini{
+  text-align: left;
+}
+/* aggiungiamo il livello di batteria del primo monopattino */
+.livello1{
+  border: 5px solid #f5b453;
+  width: 300px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #f5b453;
+  margin-bottom: 30px;
+}
+/* aggiungiamo il livello di batteria del secondo monopattino */
+.livello2{
+  border: 5px solid #1ec31e;
+  width: 500px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #1ec31e;
+  margin-bottom: 30px;
+}
+/* aggiungiamo il livello di batteria del terzo monopattino */
+.livello3{
+  border: 5px solid #be4141;
+  width: 100px;
+  height: 15px;
+  border-radius: 5px;
+  background-color: #be4141;
+  margin-bottom: 30px;
+}
